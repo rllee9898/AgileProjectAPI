@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AgileProject.Data
 {
-    class Genre
+    public class Genre
     {
     }
 }
