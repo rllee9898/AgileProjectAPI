@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AgileProject.Data
 {
-    class Console
+    public class Console
     {
+        public int ConsoleId { get; set; }
+        public string ConsoleType { get; set; }
     }
 }
