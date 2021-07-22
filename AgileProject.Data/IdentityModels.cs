@@ -31,6 +31,10 @@ namespace AgileProject.Data
         {
             return new ApplicationDbContext();
         }
-        public DbSet<Game> Games { get; set }
+        public DbSet<Game> Console { get; set; }
+        public DbSet<Game> Games { get; set; }
+        public DbSet<Game> Genre { get; set; }
+        public DbSet<Game> Rating { get; set; }
+
     }
 }
