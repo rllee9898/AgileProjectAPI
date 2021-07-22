@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using System.Data.Entity;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -18,6 +19,7 @@ namespace AgileProject.Data
         }
     }
 
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -29,5 +31,12 @@ namespace AgileProject.Data
         {
             return new ApplicationDbContext();
         }
+
+      
+        public DbSet<Console> Consoles { get; set; }
+        public DbSet<Game> Games { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+        
+
     }
 }
